@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script> window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>::-webkit-scrollbar { display: none;}</style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'heritage-beige': '#F4F1E8',
+                        'heritage-green': '#2D5F4C',
+                        'heritage-brown': '#8B4513',
+                        'heritage-offwhite': '#FDFBF7',
+                        'heritage-darkgreen': '#1a3d2f',
+                        'heritage-lightgreen': '#4a8070',
+                        'heritage-tan': '#D4C5B0'
+                    },
+                    fontFamily: {
+                        'serif': ['Crimson Text', 'serif'],
+                        'sans': ['Source Sans Pro', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-heritage-offwhite text-gray-800">
+
+<header id="header" class="bg-heritage-beige border-b-2 border-heritage-tan sticky top-0 z-50 shadow-sm">
+    <div class="px-5 py-4">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <i class="fa-solid fa-balance-scale text-heritage-green text-2xl"></i>
+                <h1 class="font-serif font-bold text-xl text-heritage-darkgreen leading-tight">Heritage Legal<br><span class="text-base font-semibold">Connect</span></h1>
+            </div>
+            <button class="p-3 rounded-lg hover:bg-heritage-tan transition-colors focus:outline-none focus:ring-4 focus:ring-heritage-green" aria-label="Menu">
+                <i class="fa-solid fa-bars text-heritage-green text-2xl"></i>
+            </button>
+        </div>
+    </div>
+</header>
+
+<main id="main-content">
+
+<section id="hero-section" class="bg-gradient-to-b from-heritage-beige to-heritage-offwhite px-5 py-12">
+    <div class="max-w-2xl mx-auto">
+        <div class="text-center mb-8">
+            <div class="inline-flex items-center justify-center w-20 h-20 bg-heritage-green rounded-full mb-6 shadow-lg">
+                <i class="fa-solid fa-hands-holding-circle text-heritage-offwhite text-3xl"></i>
+            </div>
+            <h2 class="font-serif font-bold text-4xl text-heritage-darkgreen mb-5 leading-tight">Compassionate Legal Guidance for Your Family's Future</h2>
+            <p class="text-xl text-gray-700 leading-relaxed mb-8">We understand that planning for the future can feel overwhelming. Our experienced team is here to guide you through every step with patience and care.</p>
+            <button class="w-full bg-heritage-green text-heritage-offwhite font-semibold text-xl py-5 px-8 rounded-xl shadow-lg hover:bg-heritage-darkgreen transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-heritage-green focus:ring-offset-4 mb-4">
+                <i class="fa-solid fa-calendar-check mr-3"></i>Schedule Free Consultation
+            </button>
+            <button class="w-full bg-heritage-offwhite border-2 border-heritage-green text-heritage-green font-semibold text-xl py-5 px-8 rounded-xl hover:bg-heritage-beige transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-heritage-green focus:ring-offset-4">
+                <i class="fa-solid fa-phone mr-3"></i>Call Us: (555) 123-4567
+            </button>
+        </div>
+    </div>
+</section>
+
+<section id="trust-indicators" class="bg-heritage-offwhite px-5 py-10">
+    <div class="max-w-2xl mx-auto">
+        <div class="bg-white rounded-2xl shadow-md p-6 border-2 border-heritage-tan">
+            <h3 class="font-serif font-semibold text-2xl text-heritage-darkgreen mb-6 text-center">Why Families Trust Us</h3>
+            <div class="space-y-5">
+                <div class="flex items-start space-x-4 p-4 bg-heritage-beige rounded-xl">
+                    <div class="flex-shrink-0 w-12 h-12 bg-heritage-green rounded-full flex items-center justify-center">
+                        <i class="fa-solid fa-award text-heritage-offwhite text-xl"></i>
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="font-semibold text-xl text-heritage-darkgreen mb-2">40+ Years Combined Experience</h4>
+                        <p class="text-lg text-gray-700 leading-relaxed">Decades of dedicated service to families in our community</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4 p-4 bg-heritage-beige rounded-xl">
+                    <div class="flex-shrink-0 w-12 h-12 bg-heritage-green rounded-full flex items-center justify-center">
+                        <i class="fa-solid fa-heart text-heritage-offwhite text-xl"></i>
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="font-semibold text-xl text-heritage-darkgreen mb-2">Compassionate Approach</h4>
+                        <p class="text-lg text-gray-700 leading-relaxed">We take time to listen and understand your unique situation</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4 p-4 bg-heritage-beige rounded-xl">
+                    <div class="flex-shrink-0 w-12 h-12 bg-heritage-green rounded-full flex items-center justify-center">
+                        <i class="fa-solid fa-language text-heritage-offwhite text-xl"></i>
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="font-semibold text-xl text-heritage-darkgreen mb-2">Clear Communication</h4>
+                        <p class="text-lg text-gray-700 leading-relaxed">No confusing legal jargon—we explain everything in plain language</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4 p-4 bg-heritage-beige rounded-xl">
+                    <div class="flex-shrink-0 w-12 h-12 bg-heritage-green rounded-full flex items-center justify-center">
+                        <i class="fa-solid fa-shield-halved text-heritage-offwhite text-xl"></i>
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="font-semibold text-xl text-heritage-darkgreen mb-2">Protected & Confidential</h4>
+                        <p class="text-lg text-gray-700 leading-relaxed">Your privacy and security are our highest priorities</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="services-section" class="bg-heritage-beige px-5 py-12">
+    <div class="max-w-2xl mx-auto">
+        <div class="text-center mb-10">
+            <h2 class="font-serif font-bold text-3xl text-heritage-darkgreen mb-4">How We Can Help You</h2>
+            <p class="text-xl text-gray-700 leading-relaxed">Specialized legal services designed with your family's needs in mind</p>
+        </div>
+        <div class="space-y-6">
+            <div class="bg-white rounded-2xl shadow-md p-6 border-l-4 border-heritage-green hover:shadow-xl transition-shadow duration-300">
+                <div class="flex items-start space-x-4 mb-4">
+                    <div class="flex-shrink-0 w-14 h-14 bg-heritage-green rounded-xl flex items-center justify-center">
+                        <i class="fa-solid fa-file-signature text-heritage-offwhite text-2xl"></i>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="font-serif font-semibold text-2xl text-heritage-darkgreen mb-2">Estate Planning</h3>
+                    </div>
+                </div>
+                <p class="text-lg text-gray-700 leading-relaxed mb-4">Protect your loved ones and ensure your wishes are honored. We help you create comprehensive wills, trusts, and estate plans that provide peace of mind.</p>
+                <ul class="space-y-3 ml-4">
+                    <li class="flex items-start space-x-3">
+                        <i class="fa-solid fa-check text-heritage-green text-lg mt-1"></i>
+                        <span class="text-lg text-gray-700">Last Will & Testament preparation</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                        <i class="fa-solid fa-check text-heritage-green text-lg mt-1"></i>
+                        <span class="text-lg text-gray-700">Living Trusts and Revocable Trusts</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                        <i class="fa-solid fa-check text-heritage-green text-lg mt-1"></i>
+                        <span class="text-lg text-gray-700">Asset protection strategies</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md p-6 border-l-4 border-heritage-green hover:shadow-xl transition-shadow duration-300">
+                <div class="flex items-start space-x-4 mb-4">
+                    <div class="flex-shrink-0 w-14 h-14 bg-heritage-green rounded-xl flex items-center justify-center">
+                        <i class="fa-solid fa-hand-holding-heart text-heritage-offwhite text-2xl"></i>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="font-serif font-semibold text-2xl text-heritage-darkgreen mb-2">Elder Care Planning</h3>
+                    </div>
+                </div>
+                <p class="text-lg text-gray-700 leading-relaxed mb-4">Navigate the complexities of aging with dignity. We provide guidance on healthcare decisions, long-term care, and protecting your assets.</p>
+                <ul class="space-y-3 ml-4">
+                    <li class="flex items-start space-x-3">
+                        <i class="fa-solid fa-check text-heritage-green text-lg mt-1"></i>
+                        <span class="text-lg text-gray-700">Healthcare Power of Attorney</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                        <i class="fa-solid fa-check text-heritage-green text-lg mt-1"></i>
+                        <span class="text-lg text-gray-700">Living Wills and Advance Directives</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                        <i class="fa-solid fa-check text-heritage-green text-lg mt-1"></i>
+                        <span class="text-lg text-gray-700">Medicaid planning and qualification</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md p-6 border-l-4 border-heritage-green hover:shadow-xl transition-shadow duration-300">
+                <div class="flex items-start space-x-4 mb-4">
+                    <div class="flex-shrink-0 w-14 h-14 bg-heritage-green rounded-xl flex items-center justify-center">
+                        <i class="fa-solid fa-gavel text-heritage-offwhite text-2xl"></i>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="font-serif font-semibold text-2xl text-heritage-darkgreen mb-2">Probate Assistance</h3>
+                    </div>
+                </div>
+                <p class="text-lg text-gray-700 leading-relaxed mb-4">Managing a loved one's estate doesn't have to be stressful. We guide executors and families through the probate process with compassion and efficiency.</p>
+                <ul class="space-y-3 ml-4">
+                    <li class="flex items-start space-x-3">
+                        <i class="fa-solid fa-check text-heritage-green text-lg mt-1"></i>
+                        <span class="text-lg text-gray-700">Court representation and filing</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                        <i class="fa-solid fa-check text-heritage-green text-lg mt-1"></i>
+                        <span class="text-lg text-gray-700">Estate administration guidance</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                        <i class="fa-solid fa-check text-heritage-green text-lg mt-1"></i>
+                        <span class="text-lg text-gray-700">Asset distribution coordination</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md p-6 border-l-4 border-heritage-green hover:shadow-xl transition-shadow duration-300">
+                <div class="flex items-start space-x-4 mb-4">
+                    <div class="flex-shrink-0 w-14 h-14 bg-heritage-green rounded-xl flex items-center justify-center">
+                        <i class="fa-solid fa-people-roof text-heritage-offwhite text-2xl"></i>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="font-serif font-semibold text-2xl text-heritage-darkgreen mb-2">Guardianship Services</h3>
+                    </div>
+                </div>
+                <p class="text-lg text-gray-700 leading-relaxed mb-4">Protect vulnerable family members who can no longer care for themselves. We help establish legal guardianship with sensitivity and care.</p>
+                <ul class="space-y-3 ml-4">
+                    <li class="flex items-start space-x-3">
+                        <i class="fa-solid fa-check text-heritage-green text-lg mt-1"></i>
+                        <span class="text-lg text-gray-700">Guardianship petitions and appointments</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                        <i class="fa-solid fa-check text-heritage-green text-lg mt-1"></i>
+                        <span class="text-lg text-gray-700">Conservatorship establishment</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                        <i class="fa-solid fa-check text-heritage-green text-lg mt-1"></i>
+                        <span class="text-lg text-gray-700">Ongoing compliance and reporting</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="process-section" class="bg-heritage-offwhite px-5 py-12">
+    <div class="max-w-2xl mx-auto">
+        <div class="text-center mb-10">
+            <h2 class="font-serif font-bold text-3xl text-heritage-darkgreen mb-4">Our Simple, Supportive Process</h2>
+            <p class="text-xl text-gray-700 leading-relaxed">We've designed every step to be comfortable and easy to understand</p>
+        </div>
+        <div class="space-y-6">
+            <div class="bg-white rounded-2xl shadow-md p-6 border-2 border-heritage-tan relative">
+                <div class="absolute -left-4 top-6 w-10 h-10 bg-heritage-green rounded-full flex items-center justify-center text-heritage-offwhite font-bold text-xl shadow-lg">1</div>
+                <div class="ml-8">
+                    <h3 class="font-serif font-semibold text-2xl text-heritage-darkgreen mb-3">Free Initial Consultation</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-3">We start with a relaxed, no-pressure conversation to understand your situation and concerns. This meeting is completely free and confidential.</p>
+                    <div class="flex items-center space-x-2 text-heritage-green">
+                        <i class="fa-solid fa-clock"></i>
+                        <span class="text-base font-semibold">45-60 minutes</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md p-6 border-2 border-heritage-tan relative">
+                <div class="absolute -left-4 top-6 w-10 h-10 bg-heritage-green rounded-full flex items-center justify-center text-heritage-offwhite font-bold text-xl shadow-lg">2</div>
+                <div class="ml-8">
+                    <h3 class="font-serif font-semibold text-2xl text-heritage-darkgreen mb-3">Personalized Planning</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-3">Together, we'll create a tailored plan that addresses your unique needs and goals. We explain everything clearly and answer all your questions.</p>
+                    <div class="flex items-center space-x-2 text-heritage-green">
+                        <i class="fa-solid fa-clipboard-list"></i>
+                        <span class="text-base font-semibold">Customized to your family</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md p-6 border-2 border-heritage-tan relative">
+                <div class="absolute -left-4 top-6 w-10 h-10 bg-heritage-green rounded-full flex items-center justify-center text-heritage-offwhite font-bold text-xl shadow-lg">3</div>
+                <div class="ml-8">
+                    <h3 class="font-serif font-semibold text-2xl text-heritage-darkgreen mb-3">Document Preparation</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-3">Our team carefully prepares all necessary legal documents with attention to every detail. We'll review everything with you before finalizing.</p>
+                    <div class="flex items-center space-x-2 text-heritage-green">
+                        <i class="fa-solid fa-file-contract"></i>
+                        <span class="text-base font-semibold">Professional & accurate</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md p-6 border-2 border-heritage-tan relative">
+                <div class="absolute -left-4 top-6 w-10 h-10 bg-heritage-green rounded-full flex items-center justify-center text-heritage-offwhite font-bold text-xl shadow-lg">4</div>
+                <div class="ml-8">
+                    <h3 class="font-serif font-semibold text-2xl text-heritage-darkgreen mb-3">Signing & Finalization</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-3">We guide you through signing your documents in a comfortable setting. If witnesses or notarization are needed, we coordinate everything.</p>
+                    <div class="flex items-center space-x-2 text-heritage-green">
+                        <i class="fa-solid fa-pen-fancy"></i>
+                        <span class="text-base font-semibold">Stress-free completion</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md p-6 border-2 border-heritage-tan relative">
+                <div class="absolute -left-4 top-6 w-10 h-10 bg-heritage-green rounded-full flex items-center justify-center text-heritage-offwhite font-bold text-xl shadow-lg">5</div>
+                <div class="ml-8">
+                    <h3 class="font-serif font-semibold text-2xl text-heritage-darkgreen mb-3">Ongoing Support</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-3">Life changes, and your plans may need to change too. We're here whenever you need updates, have questions, or want peace of mind.</p>
+                    <div class="flex items-center space-x-2 text-heritage-green">
+                        <i class="fa-solid fa-handshake"></i>
+                        <span class="text-base font-semibold">Lifetime relationship</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="testimonials-section" class="bg-heritage-beige px-5 py-12">
+    <div class="max-w-2xl mx-auto">
+        <div class="text-center mb-10">
+            <h2 class="font-serif font-bold text-3xl text-heritage-darkgreen mb-4">What Our Clients Say</h2>
+            <p class="text-xl text-gray-700 leading-relaxed">Real stories from families we've been honored to serve</p>
+        </div>
+        <div class="space-y-6">
+            <div class="bg-white rounded-2xl shadow-md p-6">
+                <div class="flex items-center space-x-4 mb-4">
+                    <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg" alt="Margaret testimonial" class="w-16 h-16 rounded-full object-cover border-2 border-heritage-green">
+                    <div>
+                        <h4 class="font-semibold text-xl text-heritage-darkgreen">Margaret T.</h4>
+                        <div class="flex space-x-1 text-heritage-green">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-lg text-gray-700 leading-relaxed italic">"After my husband passed, I was overwhelmed with all the legal matters. The team at Heritage Legal Connect treated me like family. They explained everything patiently and handled all the complicated paperwork. I'm so grateful for their kindness during such a difficult time."</p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md p-6">
+                <div class="flex items-center space-x-4 mb-4">
+                    <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-8.jpg" alt="Robert testimonial" class="w-16 h-16 rounded-full object-cover border-2 border-heritage-green">
+                    <div>
+                        <h4 class="font-semibold text-xl text-heritage-darkgreen">Robert & Linda K.</h4>
+                        <div class="flex space-x-1 text-heritage-green">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-lg text-gray-700 leading-relaxed italic">"We'd been putting off estate planning for years because it seemed so complicated. Heritage Legal Connect made it simple and stress-free. They took the time to understand our wishes and created a plan that gives us real peace of mind. Highly recommend!"</p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md p-6">
+                <div class="flex items-center space-x-4 mb-4">
+                    <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-6.jpg" alt="Patricia testimonial" class="w-16 h-16 rounded-full object-cover border-2 border-heritage-green">
+                    <div>
+                        <h4 class="font-semibold text-xl text-heritage-darkgreen">Patricia M.</h4>
+                        <div class="flex space-x-1 text-heritage-green">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-lg text-gray-700 leading-relaxed italic">"As a caregiver for my elderly mother, I needed help setting up her healthcare directives. The attorneys were incredibly patient and compassionate. They spoke directly with my mom, respecting her wishes while ensuring everything was legally sound. Thank you for your professionalism and heart."</p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md p-6">
+                <div class="flex items-center space-x-4 mb-4">
+                    <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-3.jpg" alt="James testimonial" class="w-16 h-16 rounded-full object-cover border-2 border-heritage-green">
+                    <div>
+                        <h4 class="font-semibold text-xl text-heritage-darkgreen">James D.</h4>
+                        <div class="flex space-x-1 text-heritage-green">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-lg text-gray-700 leading-relaxed italic">"I can't say enough good things about this firm. They helped me navigate probate for my father's estate with such care and expertise. Every question was answered promptly, and they made a difficult process much easier. Five stars all the way!"</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="faq-section" class="bg-heritage-offwhite px-5 py-12">
+    <div class="max-w-2xl mx-auto">
+        <div class="text-center mb-10">
+            <h2 class="font-serif font-bold text-3xl text-heritage-darkgreen mb-4">Common Questions Answered</h2>
+            <p class="text-xl text-gray-700 leading-relaxed">We're here to help you understand every step</p>
+        </div>
+        <div class="space-y-4">
+            <div class="bg-white rounded-2xl shadow-md border-2 border-heritage-tan overflow-hidden">
+                <button class="faq-button w-full text-left p-6 flex items-center justify-between focus:outline-none focus:ring-4 focus:ring-heritage-green" data-target="faq1">
+                    <h3 class="font-serif font-semibold text-xl text-heritage-darkgreen pr-4">Do I really need an estate plan?</h3>
+                    <i class="fa-solid fa-chevron-down text-heritage-green text-xl transition-transform duration-300"></i>
+                </button>
+                <div id="faq1" class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                    <div class="p-6 pt-0 border-t-2 border-heritage-tan">
+                        <p class="text-lg text-gray-700 leading-relaxed mb-4">Yes, everyone can benefit from basic estate planning. Without a plan, state laws will determine how your assets are distributed and who makes decisions for you if you become incapacitated. An estate plan ensures your wishes are honored and makes things much easier for your loved ones.</p>
+                        <p class="text-lg text-gray-700 leading-relaxed">Even if you don't have significant wealth, you likely have important decisions to make about healthcare, guardianship of minor children, and distribution of personal belongings. We can help you create a plan that fits your situation and budget.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md border-2 border-heritage-tan overflow-hidden">
+                <button class="faq-button w-full text-left p-6 flex items-center justify-between focus:outline-none focus:ring-4 focus:ring-heritage-green" data-target="faq2">
+                    <h3 class="font-serif font-semibold text-xl text-heritage-darkgreen pr-4">How much does estate planning cost?</h3>
+                    <i class="fa-solid fa-chevron-down text-heritage-green text-xl transition-transform duration-300"></i>
+                </button>
+                <div id="faq2" class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                    <div class="p-6 pt-0 border-t-2 border-heritage-tan">
+                        <p class="text-lg text-gray-700 leading-relaxed mb-4">Our fees vary based on the complexity of your needs, but we always provide clear, upfront pricing before you commit to anything. During your free consultation, we'll discuss your situation and give you an accurate estimate.</p>
+                        <p class="text-lg text-gray-700 leading-relaxed">We offer flexible payment plans and work hard to make our services accessible. Basic estate planning packages typically start at a few hundred dollars, while more comprehensive plans involving trusts may cost more. The investment in proper planning often saves families thousands of dollars in probate costs and legal fees later.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md border-2 border-heritage-tan overflow-hidden">
+                <button class="faq-button w-full text-left p-6 flex items-center justify-between focus:outline-none focus:ring-4 focus:ring-heritage-green" data-target="faq3">
+                    <h3 class="font-serif font-semibold text-xl text-heritage-darkgreen pr-4">What's the difference between a will and a trust?</h3>
+                    <i class="fa-solid fa-chevron-down text-heritage-green text-xl transition-transform duration-300"></i>
+                </button>
+                <div id="faq3" class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                    <div class="p-6 pt-0 border-t-2 border-heritage-tan">
+                        <p class="text-lg text-gray-700 leading-relaxed mb-4"><strong>A Will</strong> is a legal document that specifies how your assets should be distributed after you pass away. It goes through probate court, which is a public process and can take several months.</p>
+                        <p class="text-lg text-gray-700 leading-relaxed mb-4"><strong>A Trust</strong> is a legal arrangement where you transfer assets to be managed by a trustee for the benefit of your beneficiaries. Trusts avoid probate, remain private, and can provide more control over how and when assets are distributed.</p>
+                        <p class="text-lg text-gray-700 leading-relaxed">Many people benefit from having both. We'll help you understand which option (or combination) is best for your circumstances during our consultation.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md border-2 border-heritage-tan overflow-hidden">
+                <button class="faq-button w-full text-left p-6 flex items-center justify-between focus:outline-none focus:ring-4 focus:ring-heritage-green" data-target="faq4">
+                    <h3 class="font-serif font-semibold text-xl text-heritage-darkgreen pr-4">How long does the estate planning process take?</h3>
+                    <i class="fa-solid fa-chevron-down text-heritage-green text-xl transition-transform duration-300"></i>
+                </button>
+                <div id="faq4" class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                    <div class="p-6 pt-0 border-t-2 border-heritage-tan">
+                        <p class="text-lg text-gray-700 leading-relaxed mb-4">For most clients, the entire process takes 2-4 weeks from your initial consultation to signing your completed documents. This timeline includes:</p>
+                        <ul class="space-y-2 ml-6 mb-4">
+                            <li class="text-lg text-gray-700 leading-relaxed">• Initial consultation and information gathering (1 week)</li>
+                            <li class="text-lg text-gray-700 leading-relaxed">• Document drafting and review (1-2 weeks)</li>
+                            <li class="text-lg text-gray-700 leading-relaxed">• Final meeting and signing (same day)</li>
+                        </ul>
+                        <p class="text-lg text-gray-700 leading-relaxed">We work at a pace that's comfortable for you. If you need documents prepared more quickly due to travel plans or health concerns, we can often accommodate rush requests.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md border-2 border-heritage-tan overflow-hidden">
+                <button class="faq-button w-full text-left p-6 flex items-center justify-between focus:outline-none focus:ring-4 focus:ring-heritage-green" data-target="faq5">
+                    <h3 class="font-serif font-semibold text-xl text-heritage-darkgreen pr-4">Can I update my estate plan if my circumstances change?</h3>
+                    <i class="fa-solid fa-chevron-down text-heritage-green text-xl transition-transform duration-300"></i>
+                </button>
+                <div id="faq5" class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                    <div class="p-6 pt-0 border-t-2 border-heritage-tan">
+                        <p class="text-lg text-gray-700 leading-relaxed mb-4">Absolutely! In fact, we recommend reviewing your estate plan every 3-5 years or whenever you experience major life changes such as:</p>
+                        <ul class="space-y-2 ml-6 mb-4">
+                            <li class="text-lg text-gray-700 leading-relaxed">• Marriage, divorce, or remarriage</li>
+                            <li class="text-lg text-gray-700 leading-relaxed">• Birth or adoption of children or grandchildren</li>
+                            <li class="text-lg text-gray-700 leading-relaxed">• Significant changes in assets or financial situation</li>
+                            <li class="text-lg text-gray-700 leading-relaxed">• Moving to a different state</li>
+                            <li class="text-lg text-gray-700 leading-relaxed">• Changes in tax laws</li>
+                        </ul>
+                        <p class="text-lg text-gray-700 leading-relaxed">Updates are typically simple and cost-effective. We're always here to help you keep your plan current and effective.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md border-2 border-heritage-tan overflow-hidden">
+                <button class="faq-button w-full text-left p-6 flex items-center justify-between focus:outline-none focus:ring-4 focus:ring-heritage-green" data-target="faq6">
+                    <h3 class="font-serif font-semibold text-xl text-heritage-darkgreen pr-4">What happens if I don't have an estate plan?</h3>
+                    <i class="fa-solid fa-chevron-down text-heritage-green text-xl transition-transform duration-300"></i>
+                </button>
+                <div id="faq6" class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                    <div class="p-6 pt-0 border-t-2 border-heritage-tan">
+                        <p class="text-lg text-gray-700 leading-relaxed mb-4">Without an estate plan, your state's intestacy laws will determine what happens to your assets and who makes decisions for you. This can lead to several challenges:</p>
+                        <ul class="space-y-2 ml-6 mb-4">
+                            <li class="text-lg text-gray-700 leading-relaxed">• Your assets may not go to the people you would have chosen</li>
+                            <li class="text-lg text-gray-700 leading-relaxed">• The probate process becomes longer and more expensive</li>
+                            <li class="text-lg text-gray-700 leading-relaxed">• Family disputes may arise over your belongings</li>
+                            <li class="text-lg text-gray-700 leading-relaxed">• Court-appointed guardians may make healthcare decisions</li>
+                            <li class="text-lg text-gray-700 leading-relaxed">• Your loved ones face additional stress during an already difficult time</li>
+                        </ul>
+                        <p class="text-lg text-gray-700 leading-relaxed">Having a plan in place, even a simple one, provides clarity, reduces costs, and gives your family peace of mind.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md border-2 border-heritage-tan overflow-hidden">
+                <button class="faq-button w-full text-left p-6 flex items-center justify-between focus:outline-none focus:ring-4 focus:ring-heritage-green" data-target="faq7">
+                    <h3 class="font-serif font-semibold text-xl text-heritage-darkgreen pr-4">What should I bring to my first consultation?</h3>
+                    <i class="fa-solid fa-chevron-down text-heritage-green text-xl transition-transform duration-300"></i>
+                </button>
+                <div id="faq7" class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                    <div class="p-6 pt-0 border-t-2 border-heritage-tan">
+                        <p class="text-lg text-gray-700 leading-relaxed mb-4">Don't worry about gathering everything before your first visit—we'll guide you through what we need. However, it can be helpful to bring:</p>
+                        <ul class="space-y-2 ml-6 mb-4">
+                            <li class="text-lg text-gray-700 leading-relaxed">• A list of your major assets (home, vehicles, accounts)</li>
+                            <li class="text-lg text-gray-700 leading-relaxed">• Names and contact information for potential beneficiaries</li>
+                            <li class="text-lg text-gray-700 leading-relaxed">• Any existing estate planning documents you may have</li>
+                            <li class="text-lg text-gray-700 leading-relaxed">• Questions or concerns you want to discuss</li>
+                        </ul>
+                        <p class="text-lg text-gray-700 leading-relaxed">Most importantly, just bring yourself and an open mind. We'll walk through everything together at a comfortable pace.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="resources-section" class="bg-heritage-beige px-5 py-12">
+    <div class="max-w-2xl mx-auto">
+        <div class="text-center mb-10">
+            <h2 class="font-serif font-bold text-3xl text-heritage-darkgreen mb-4">Helpful Resources</h2>
+            <p class="text-xl text-gray-700 leading-relaxed">Educational materials to help you understand your options</p>
+        </div>
+        <div class="space-y-6">
+            <div class="bg-white rounded-2xl shadow-md p-6 hover:shadow-xl transition-shadow duration-300">
+                <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0 w-14 h-14 bg-heritage-green rounded-xl flex items-center justify-center">
+                        <i class="fa-solid fa-book text-heritage-offwhite text-2xl"></i>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="font-serif font-semibold text-2xl text-heritage-darkgreen mb-2">Estate Planning Guide</h3>
+                        <p class="text-lg text-gray-700 leading-relaxed mb-4">A comprehensive, easy-to-read guide covering the basics of wills, trusts, and powers of attorney. Download our free PDF to learn more.</p>
+                        <button class="text-heritage-green font-semibold text-lg hover:text-heritage-darkgreen transition-colors focus:outline-none focus:ring-2 focus:ring-heritage-green rounded px-2 py-1">
+                            Download Free Guide <i class="fa-solid fa-download ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md p-6 hover:shadow-xl transition-shadow duration-300">
+                <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0 w-14 h-14 bg-heritage-green rounded-xl flex items-center justify-center">
+                        <i class="fa-solid fa-list-check text-heritage-offwhite text-2xl"></i>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="font-serif font-semibold text-2xl text-heritage-darkgreen mb-2">Estate Planning Checklist</h3>
+                        <p class="text-lg text-gray-700 leading-relaxed mb-4">Not sure where to start? Use our simple checklist to organize your thoughts and prepare for your consultation.</p>
+                        <button class="text-heritage-green font-semibold text-lg hover:text-heritage-darkgreen transition-colors focus:outline-none focus:ring-2 focus:ring-heritage-green rounded px-2 py-1">
+                            View Checklist <i class="fa-solid fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md p-6 hover:shadow-xl transition-shadow duration-300">
+                <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0 w-14 h-14 bg-heritage-green rounded-xl flex items-center justify-center">
+                        <i class="fa-solid fa-newspaper text-heritage-offwhite text-2xl"></i>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="font-serif font-semibold text-2xl text-heritage-darkgreen mb-2">Legal News & Updates</h3>
+                        <p class="text-lg text-gray-700 leading-relaxed mb-4">Stay informed about changes in estate planning laws and regulations that may affect you and your family.</p>
+                        <button class="text-heritage-green font-semibold text-lg hover:text-heritage-darkgreen transition-colors focus:outline-none focus:ring-2 focus:ring-heritage-green rounded px-2 py-1">
+                            Read Latest Articles <i class="fa-solid fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md p-6 hover:shadow-xl transition-shadow duration-300">
+                <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0 w-14 h-14 bg-heritage-green rounded-xl flex items-center justify-center">
+                        <i class="fa-solid fa-video text-heritage-offwhite text-2xl"></i>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="font-serif font-semibold text-2xl text-heritage-darkgreen mb-2">Educational Videos</h3>
+                        <p class="text-lg text-gray-700 leading-relaxed mb-4">Watch short, informative videos explaining common estate planning topics in plain language.</p>
+                        <button class="text-heritage-green font-semibold text-lg hover:text-heritage-darkgreen transition-colors focus:outline-none focus:ring-2 focus:ring-heritage-green rounded px-2 py-1">
+                            Watch Videos <i class="fa-solid fa-play ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="team-section" class="bg-heritage-offwhite px-5 py-12">
+    <div class="max-w-2xl mx-auto">
+        <div class="text-center mb-10">
+            <h2 class="font-serif font-bold text-3xl text-heritage-darkgreen mb-4">Meet Our Caring Team</h2>
+            <p class="text-xl text-gray-700 leading-relaxed">Experienced attorneys dedicated to serving you with compassion</p>
+        </div>
+        <div class="space-y-6">
+            <div class="bg-white rounded-2xl shadow-md p-6">
+                <div class="flex flex-col items-center text-center mb-4">
+                    <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg" alt="Attorney Thomas Heritage" class="w-32 h-32 rounded-full object-cover border-4 border-heritage-green mb-4 shadow-lg">
+                    <h3 class="font-serif font-bold text-2xl text-heritage-darkgreen mb-1">Thomas R. Heritage, Esq.</h3>
+                    <p class="text-lg text-heritage-green font-semibold mb-3">Founding Partner</p>
+                    <div class="flex items-center space-x-2 text-gray-600 mb-4">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <span class="text-base">Harvard Law School, J.D.</span>
+                    </div>
+                </div>
+                <p class="text-lg text-gray-700 leading-relaxed mb-4">With over 25 years of experience in estate planning and elder law, Tom founded Heritage Legal Connect to provide compassionate, accessible legal services to families in our community. He specializes in complex estate planning and has helped hundreds of families protect their legacies.</p>
+                <div class="flex items-center justify-center space-x-4 text-heritage-green">
+                    <i class="fa-solid fa-certificate text-xl"></i>
+                    <span class="text-base font-semibold">Board Certified Estate Planning Specialist</span>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md p-6">
+                <div class="flex flex-col items-center text-center mb-4">
+                    <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-7.jpg" alt="Attorney Sarah Martinez" class="w-32 h-32 rounded-full object-cover border-4 border-heritage-green mb-4 shadow-lg">
+                    <h3 class="font-serif font-bold text-2xl text-heritage-darkgreen mb-1">Sarah Martinez, Esq.</h3>
+                    <p class="text-lg text-heritage-green font-semibold mb-3">Senior Partner</p>
+                    <div class="flex items-center space-x-2 text-gray-600 mb-4">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <span class="text-base">Georgetown Law, J.D.</span>
+                    </div>
+                </div>
+                <p class="text-lg text-gray-700 leading-relaxed mb-4">Sarah brings 18 years of experience in elder care planning and guardianship matters. She is fluent in Spanish and has a special gift for explaining complex legal concepts in ways that everyone can understand. Sarah is deeply committed to protecting the rights and dignity of seniors.</p>
+                <div class="flex items-center justify-center space-x-4 text-heritage-green">
+                    <i class="fa-solid fa-award text-xl"></i>
+                    <span class="text-base font-semibold">Top Elder Law Attorney Award 2023</span>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md p-6">
+                <div class="flex flex-col items-center text-center mb-4">
+                    <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-4.jpg" alt="Attorney Michael Chen" class="w-32 h-32 rounded-full object-cover border-4 border-heritage-green mb-4 shadow-lg">
+                    <h3 class="font-serif font-bold text-2xl text-heritage-darkgreen mb-1">Michael Chen, Esq.</h3>
+                    <p class="text-lg text-heritage-green font-semibold mb-3">Associate Attorney</p>
+                    <div class="flex items-center space-x-2 text-gray-600 mb-4">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <span class="text-base">Stanford Law School, J.D.</span>
+                    </div>
+                </div>
+                <p class="text-lg text-gray-700 leading-relaxed mb-4">Michael focuses on probate administration and trust litigation. With 12 years of experience, he guides families through the probate process with patience and expertise. Michael is known for his meticulous attention to detail and his ability to resolve complex estate disputes amicably.</p>
+                <div class="flex items-center justify-center space-x-4 text-heritage-green">
+                    <i class="fa-solid fa-users text-xl"></i>
+                    <span class="text-base font-semibold">500+ Families Served</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact-section" class="bg-heritage-beige px-5 py-12">
+    <div class="max-w-2xl mx-auto">
+        <div class="text-center mb-10">
+            <h2 class="font-serif font-bold text-3xl text-heritage-darkgreen mb-4">Get in Touch</h2>
+            <p class="text-xl text-gray-700 leading-relaxed">We're here to answer your questions and provide guidance</p>
+        </div>
+        <div class="bg-white rounded-2xl shadow-md p-6 mb-6">
+            <h3 class="font-serif font-semibold text-2xl text-heritage-darkgreen mb-6 text-center">Schedule Your Free Consultation</h3>
+            <form class="space-y-5">
+                <div>
+                    <label for="name" class="block text-lg font-semibold text-heritage-darkgreen mb-2">Your Name *</label>
+                    <input type="text" id="name" name="name" required class="w-full px-5 py-4 text-lg border-2 border-heritage-tan rounded-xl focus:outline-none focus:ring-4 focus:ring-heritage-green focus:border-heritage-green transition-all" placeholder="Enter your full name">
+                </div>
+                <div>
+                    <label for="phone" class="block text-lg font-semibold text-heritage-darkgreen mb-2">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required class="w-full px-5 py-4 text-lg border-2 border-heritage-tan rounded-xl focus:outline-none focus:ring-4 focus:ring-heritage-green focus:border-heritage-green transition-all" placeholder="(555) 123-4567">
+                </div>
+                <div>
+                    <label for="email" class="block text-lg font-semibold text-heritage-darkgreen mb-2">Email Address *</label>
+                    <input type="email" id="email" name="email" required class="w-full px-5 py-4 text-lg border-2 border-heritage-tan rounded-xl focus:outline-none focus:ring-4 focus:ring-heritage-green focus:border-heritage-green transition-all" placeholder="your.email@example.com">
+                </div>
+                <div>
+                    <label for="service" class="block text-lg font-semibold text-heritage-darkgreen mb-2">What can we help you with? *</label>
+                    <select id="service" name="service" required class="w-full px-5 py-4 text-lg border-2 border-heritage-tan rounded-xl focus:outline-none focus:ring-4 focus:ring-heritage-green focus:border-heritage-green transition-all bg-white">
+                        <option value="">Please select a service</option>
+                        <option value="estate-planning">Estate Planning</option>
+                        <option value="elder-care">Elder Care Planning</option>
+                        <option value="probate">Probate Assistance</option>
+                        <option value="guardianship">Guardianship Services</option>
+                        <option value="other">Other / Not Sure</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="message" class="block text-lg font-semibold text-heritage-darkgreen mb-2">Tell us a bit about your situation (Optional)</label>
+                    <textarea id="message" name="message" rows="4" class="w-full px-5 py-4 text-lg border-2 border-heritage-tan rounded-xl focus:outline-none focus:ring-4 focus:ring-heritage-green focus:border-heritage-green transition-all resize-none" placeholder="Share any details that would help us prepare for our conversation..."></textarea>
+                </div>
+                <button type="submit" class="w-full bg-heritage-green text-heritage-offwhite font-bold text-xl py-5 px-8 rounded-xl shadow-lg hover:bg-heritage-darkgreen transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-heritage-green focus:ring-offset-4">
+                    <i class="fa-solid fa-paper-plane mr-3"></i>Request Free Consultation
+                </button>
+                <p class="text-center text-base text-gray-600 leading-relaxed">We'll respond within 24 hours, usually much sooner</p>
+            </form>
+        </div>
+
+        <div class="space-y-4">
+            <div class="bg-white rounded-2xl shadow-md p-6">
+                <div class="flex items-center space-x-4">
+                    <div class="flex-shrink-0 w-14 h-14 bg-heritage-green rounded-xl flex items-center justify-center">
+                        <i class="fa-solid fa-phone text-heritage-offwhite text-2xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-xl text-heritage-darkgreen mb-1">Call Us</h4>
+                        <p class="text-lg text-gray-700"><a href="tel:5551234567" class="hover:text-heritage-green transition-colors">(555) 123-4567</a></p>
+                        <p class="text-base text-gray-600">Monday - Friday, 9:00 AM - 5:00 PM</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md p-6">
+                <div class="flex items-center space-x-4">
+                    <div class="flex-shrink-0 w-14 h-14 bg-heritage-green rounded-xl flex items-center justify-center">
+                        <i class="fa-solid fa-envelope text-heritage-offwhite text-2xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-xl text-heritage-darkgreen mb-1">Email Us</h4>
+                        <p class="text-lg text-gray-700"><a href="mailto:info@heritagelegalconnect.com" class="hover:text-heritage-green transition-colors">info@heritagelegalconnect.com</a></p>
+                        <p class="text-base text-gray-600">We respond within 24 hours</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md p-6">
+                <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0 w-14 h-14 bg-heritage-green rounded-xl flex items-center justify-center">
+                        <i class="fa-solid fa-location-dot text-heritage-offwhite text-2xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-xl text-heritage-darkgreen mb-1">Visit Our Office</h4>
+                        <p class="text-lg text-gray-700 leading-relaxed">456 Main Street, Suite 200<br>Springfield, State 12345</p>
+                        <p class="text-base text-gray-600 mt-2">Free parking available</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="accessibility-section" class="bg-heritage-offwhite px-5 py-10">
+    <div class="max-w-2xl mx-auto">
+        <div class="bg-heritage-beige rounded-2xl shadow-md p-6 border-2 border-heritage-tan">
+            <div class="flex items-start space-x-4">
+                <div class="flex-shrink-0 w-12 h-12 bg-heritage-green rounded-full flex items-center justify-center">
+                    <i class="fa-solid fa-universal-access text-heritage-offwhite text-xl"></i>
+                </div>
+                <div>
+                    <h3 class="font-serif font-semibold text-xl text-heritage-darkgreen mb-3">Accessibility Commitment</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-3">Heritage Legal Connect is committed to ensuring our services are accessible to everyone. Our office features wheelchair access, large-print documents, and hearing assistance devices.</p>
+                    <p class="text-lg text-gray-700 leading-relaxed">If you have specific accessibility needs, please let us know when scheduling your appointment so we can accommodate you.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer id="footer" class="bg-heritage-darkgreen text-heritage-offwhite px-5 py-10">
+    <div class="max-w-2xl mx-auto">
+        <div class="text-center mb-8">
+            <div class="flex items-center justify-center space-x-3 mb-4">
+                <i class="fa-solid fa-balance-scale text-3xl"></i>
+                <h2 class="font-serif font-bold text-2xl">Heritage Legal Connect</h2>
+            </div>
+            <p class="text-lg leading-relaxed opacity-90">Compassionate legal guidance for your family's future</p>
+        </div>
+
+        <div class="space-y-6 mb-8">
+            <div class="text-center">
+                <h3 class="font-serif font-semibold text-xl mb-3">Quick Links</h3>
+                <div class="space-y-2">
+                    <a href="#services-section" class="block text-lg hover:text-heritage-tan transition-colors focus:outline-none focus:ring-2 focus:ring-heritage-tan rounded px-2 py-1">Our Services</a>
+                    <a href="#process-section" class="block text-lg hover:text-heritage-tan transition-colors focus:outline-none focus:ring-2 focus:ring-heritage-tan rounded px-2 py-1">Our Process</a>
+                    <a href="#faq-section" class="block text-lg hover:text-heritage-tan transition-colors focus:outline-none focus:ring-2 focus:ring-heritage-tan rounded px-2 py-1">FAQ</a>
+                    <a href="#team-section" class="block text-lg hover:text-heritage-tan transition-colors focus:outline-none focus:ring-2 focus:ring-heritage-tan rounded px-2 py-1">Our Team</a>
+                    <a href="#contact-section" class="block text-lg hover:text-heritage-tan transition-colors focus:outline-none focus:ring-2 focus:ring-heritage-tan rounded px-2 py-1">Contact Us</a>
+                </div>
+            </div>
+
+            <div class="text-center pt-6 border-t border-heritage-lightgreen">
+                <p class="text-base opacity-90 leading-relaxed mb-2">456 Main Street, Suite 200, Springfield, State 12345</p>
+                <p class="text-base opacity-90 leading-relaxed mb-2">Phone: <a href="tel:5551234567" class="hover:text-heritage-tan transition-colors">(555) 123-4567</a></p>
+                <p class="text-base opacity-90 leading-relaxed">Email: <a href="mailto:info@heritagelegalconnect.com" class="hover:text-heritage-tan transition-colors">info@heritagelegalconnect.com</a></p>
+            </div>
+        </div>
+
+        <div class="text-center pt-6 border-t border-heritage-lightgreen">
+            <p class="text-base opacity-75 leading-relaxed mb-4">© 2024 Heritage Legal Connect. All rights reserved.</p>
+            <p class="text-sm opacity-75 leading-relaxed">Attorney Advertising. Prior results do not guarantee a similar outcome. The information on this website is for general information purposes only and should not be construed as legal advice.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+window.addEventListener('load', function() {
+    const faqButtons = document.querySelectorAll('.faq-button');
+    
+    faqButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const targetId = this.getAttribute('data-target');
+            const content = document.getElementById(targetId);
+            const icon = this.querySelector('i');
+            
+            const isOpen = content.style.maxHeight && content.style.maxHeight !== '0px';
+            
+            document.querySelectorAll('.faq-content').forEach(item => {
+                item.style.maxHeight = '0px';
+            });
+            
+            document.querySelectorAll('.faq-button i').forEach(i => {
+                i.style.transform = 'rotate(0deg)';
+            });
+            
+            if (!isOpen) {
+                content.style.maxHeight = content.scrollHeight + 'px';
+                icon.style.transform = 'rotate(180deg)';
+            }
+        });
+    });
+});
+</script>
+
+</body>
+</html>

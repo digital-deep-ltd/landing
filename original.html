@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script> window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-navy': '#1A233A',
+                        'brand-yellow': '#FDB813',
+                        'brand-light-gray': '#F3F4F6',
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>::-webkit-scrollbar { display: none;}</style>
+</head>
+<body class="bg-brand-navy font-poppins text-white">
+
+    <div id="mobile-app-container" class="max-w-md mx-auto bg-white">
+
+        <!-- Header -->
+        <header id="header" class="bg-brand-navy sticky top-0 z-50">
+            <div class="px-4 py-3 flex justify-between items-center border-b border-gray-700">
+                <div class="flex items-center space-x-4">
+                    <i class="fa-solid fa-phone text-xl text-white"></i>
+                    <i class="fa-solid fa-envelope text-xl text-white"></i>
+                </div>
+                <div class="flex-1 flex justify-center">
+                    <div class="w-12 h-12 border-2 border-white flex items-center justify-center transform rotate-45">
+                        <span class="text-white font-bold text-2xl transform -rotate-45">D</span>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <i class="fa-solid fa-bars text-xl text-white"></i>
+                    <i class="fa-solid fa-search text-xl text-white"></i>
+                </div>
+            </div>
+            <div class="bg-brand-navy px-4 py-2 border-b-4 border-brand-yellow flex justify-center items-center">
+                <span class="text-white text-sm mr-4">Call us now:</span>
+                <span class="text-white font-bold text-lg">0800 724273</span>
+            </div>
+        </header>
+
+        <main>
+            <!-- Hero Section -->
+            <section id="hero" class="bg-brand-navy px-6 py-12 text-center">
+                <h1 class="text-3xl font-bold leading-tight mb-4">Protect your family with a Lasting Power of Attorney</h1>
+                <p class="text-gray-300 mb-8">
+                    Start your LPA in your own time with clear guidance or let a solicitor firm trusted by the Office of the Public Guardian draft it for you. One place. Two options. Your call.
+                </p>
+                <div class="flex flex-col sm:flex-row sm:justify-center gap-4 mb-8">
+                    <button class="bg-brand-yellow text-brand-navy font-semibold py-3 px-6 rounded-lg flex items-center justify-center space-x-2 w-full">
+                        <i class="fa-solid fa-play-circle"></i>
+                        <span>Start now</span>
+                    </button>
+                    <button class="border-2 border-white text-white font-semibold py-3 px-6 rounded-lg flex items-center justify-center space-x-2 w-full">
+                        <i class="fa-solid fa-bolt"></i>
+                        <span>Contact us</span>
+                    </button>
+                </div>
+                <div class="border-t border-gray-700 pt-6 flex justify-center items-center space-x-2">
+                    <span class="text-gray-300">Excellent</span>
+                    <div class="flex space-x-1">
+                        <i class="fa-solid fa-star text-green-500"></i>
+                        <i class="fa-solid fa-star text-green-500"></i>
+                        <i class="fa-solid fa-star text-green-500"></i>
+                        <i class="fa-solid fa-star text-green-500"></i>
+                        <i class="fa-solid fa-star-half-alt text-green-500"></i>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-star text-green-500 mr-1"></i>
+                        <span class="font-semibold text-white">Trustpilot</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- LPA Readiness Check Form -->
+            <section id="lpa-check" class="bg-brand-navy px-6 py-12">
+                 <div class="text-center mb-6">
+                    <p class="text-gray-400 text-sm font-semibold">GET STARTED HERE</p>
+                    <h2 class="text-3xl font-bold text-brand-yellow">Get your free LPA readiness check</h2>
+                    <p class="text-gray-300 mt-2">Answer a few quick questions so we can show you whether a DIY LPA or a solicitor drafted LPA is safer for your situation.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg text-gray-800">
+                    <form id="readiness-form" class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700">Your name</label>
+                            <input type="text" id="name" placeholder="Full name" class="mt-1 block w-full px-3 py-2 bg-gray-100 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-brand-yellow focus:border-brand-yellow">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                            <input type="email" id="email" placeholder="You@example.com" class="mt-1 block w-full px-3 py-2 bg-gray-100 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-brand-yellow focus:border-brand-yellow">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700">Phone number</label>
+                            <input type="tel" id="phone" placeholder="Optional, but helpful if you want a call" class="mt-1 block w-full px-3 py-2 bg-gray-100 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-brand-yellow focus:border-brand-yellow">
+                        </div>
+                        <div>
+                            <label for="needs" class="block text-sm font-medium text-gray-700">What do you think you need right now?</label>
+                            <select id="needs" class="mt-1 block w-full px-3 py-2 bg-gray-100 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-brand-yellow focus:border-brand-yellow">
+                                <option>Select one</option>
+                                <option>I need a new LPA</option>
+                                <option>I need to update my LPA</option>
+                                <option>I'm not sure</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="situation" class="block text-sm font-medium text-gray-700">Anything we should know about your situation</label>
+                            <textarea id="situation" rows="4" placeholder="Type any additional relevant information here" class="mt-1 block w-full px-3 py-2 bg-gray-100 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-brand-yellow focus:border-brand-yellow"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-brand-yellow text-brand-navy font-bold py-3 px-4 rounded-lg hover:bg-yellow-500 transition-colors">Show me my safest route</button>
+                    </form>
+                </div>
+                 <p class="text-xs text-gray-400 mt-4 text-center">Your details are confidential and reviewed by Endeavour Law. We will only contact you about LPAs or deputyship. No spam. We hate it as well.</p>
+            </section>
+
+            <!-- Service Options -->
+            <section id="service-options" class="bg-brand-light-gray px-6 py-12 text-brand-navy">
+                <div class="text-center mb-10">
+                    <p class="text-gray-500 text-sm font-semibold">HERE TO HELP</p>
+                    <h2 class="text-3xl font-bold text-brand-navy">Two clear ways to put your LPA in place</h2>
+                    <p class="text-gray-600 mt-2 max-w-xl mx-auto">No one wants a form thrown out because of a tiny mistake. Choose the level of support that fits your life today and the risk level you are willing to accept for tomorrow.</p>
+                </div>
+                <div class="space-y-8">
+                    <!-- DIY Option -->
+                    <div id="diy-option" class="bg-white rounded-xl shadow-lg p-6 text-center">
+                        <div class="inline-flex items-center justify-center w-16 h-16 bg-brand-yellow/20 rounded-full mb-4">
+                            <i class="fa-solid fa-file-alt text-brand-yellow text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">DIY LPA pack</h3>
+                        <span class="inline-block bg-brand-yellow text-brand-navy text-xs font-bold px-3 py-1 rounded-full mb-4">Best for Simple situations</span>
+                        <p class="text-gray-600 mb-4">You get plain English guidance that walks you through each section of the LPA so you are never guessing what a question means. Download your pack start in your own time and follow the steps at your pace.</p>
+                        <p class="text-yellow-600 text-sm mb-6">Good for single straightforward estates where everyone gets on and there is no business or complicated money in the mix.</p>
+                        <button class="bg-brand-yellow text-brand-navy font-bold py-3 px-8 rounded-lg w-full mb-2">Start with DIY</button>
+                        <p class="text-xs text-gray-500">Upgrade to solicitor support at any point</p>
+                    </div>
+
+                    <!-- Solicitor Option -->
+                    <div id="solicitor-option" class="bg-white rounded-xl shadow-lg p-6 text-center">
+                         <div class="inline-flex items-center justify-center w-16 h-16 bg-brand-yellow/20 rounded-full mb-4">
+                            <i class="fa-solid fa-gavel text-brand-yellow text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Solicitor drafted LPA</h3>
+                        <span class="inline-block bg-brand-yellow text-brand-navy text-xs font-bold px-3 py-1 rounded-full mb-4">Highest protection</span>
+                        <p class="text-gray-600 mb-4">Work with Endeavour Law solicitors who prepare LPAs and deputyship applications every day. We gather your details advise on risk and draft a tailored LPA that stands up when life gets messy and everyone has an opinion.</p>
+                        <p class="text-yellow-600 text-sm mb-6">Ideal where there is a business property significant savings a blended family or any chance of future dispute.</p>
+                        <button class="bg-brand-yellow text-brand-navy font-bold py-3 px-8 rounded-lg w-full mb-2">Request a solicitor led LPA</button>
+                        <p class="text-xs text-gray-500">Free no obligation first chat</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Process Section -->
+            <section id="process" class="bg-brand-navy px-6 py-12 text-center">
+                <h2 class="text-3xl font-bold mb-2">What happens after you click</h2>
+                <p class="text-gray-300 mb-10">No mystery. No tricks. Here is what actually happens when you give us your details and trust us with something this important.</p>
+                <div class="space-y-6">
+                    <div id="step-1" class="border-2 border-brand-yellow rounded-lg p-6 text-left">
+                        <h3 class="text-brand-yellow text-3xl font-bold mb-2">Step 1</h3>
+                        <h4 class="text-white text-2xl font-semibold mb-3">Quick review of your answers</h4>
+                        <p class="text-gray-300">A member of the Endeavour Law team looks at what you have told us and checks whether DIY really is safe or whether there is a clear risk that needs solicitor input.</p>
+                    </div>
+                    <div id="step-2" class="border-2 border-brand-yellow rounded-lg p-6 text-left">
+                        <h3 class="text-brand-yellow text-3xl font-bold mb-2">Step 2</h3>
+                        <h4 class="text-white text-2xl font-semibold mb-3">Clear personal recommendation</h4>
+                        <p class="text-gray-300">We come back to you with the route we would choose in your position and explain why in plain language. You stay in control and choose how to go ahead.</p>
+                    </div>
+                    <div id="step-3" class="border-2 border-brand-yellow rounded-lg p-6 text-left">
+                        <h3 class="text-brand-yellow text-3xl font-bold mb-2">Step 3</h3>
+                        <h4 class="text-white text-2xl font-semibold mb-3">LPA prepared signed and sent to OPG</h4>
+                        <p class="text-gray-300">For DIY you follow the pack and submit to the Office of the Public Guardian yourself. For solicitor drafted we manage the legal detail and paperwork with you until your LPA is safely registered.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Reviews Section -->
+            <section id="reviews" class="bg-brand-light-gray px-6 py-12 text-brand-navy">
+                <div class="text-center mb-8">
+                     <p class="text-gray-500 text-sm font-semibold">REVIEWS</p>
+                    <h2 class="text-3xl font-bold text-brand-yellow">What our clients say</h2>
+                </div>
+                <div id="trustpilot-card" class="bg-white rounded-lg shadow-md p-6">
+                    <div class="flex items-center mb-4">
+                        <i class="fa-solid fa-star text-green-500 text-2xl mr-2"></i>
+                        <span class="text-2xl font-bold">Trustpilot</span>
+                    </div>
+                    <div class="flex items-center space-x-1 mb-2">
+                        <i class="fa-solid fa-star text-white text-2xl bg-green-500 p-1"></i>
+                        <i class="fa-solid fa-star text-white text-2xl bg-green-500 p-1"></i>
+                        <i class="fa-solid fa-star text-white text-2xl bg-green-500 p-1"></i>
+                        <i class="fa-solid fa-star text-white text-2xl bg-green-500 p-1"></i>
+                        <i class="fa-solid fa-star text-white text-2xl bg-gray-300 p-1"></i>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-4">TrustScore <strong>4.4</strong> | <strong>1,712 reviews</strong></p>
+                    <div class="border-t pt-4">
+                        <h4 class="font-bold text-lg mb-2">Family law solicitors</h4>
+                        <p class="text-gray-700">"They listen to your concerns and offer good and constructive advice. Focus on what is important on your case. Act upon..."</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- FAQ Section -->
+            <section id="faq" class="bg-brand-light-gray px-6 py-12 text-brand-navy">
+                <div class="text-center mb-8">
+                    <p class="text-gray-500 text-sm font-semibold">FAQS</p>
+                    <h2 class="text-3xl font-bold">Have Questions?</h2>
+                    <p class="text-gray-600 mt-2">Our FAQ section covers everything you need to know about LPA's, from setup to troubleshooting and support. Find quick, helpful answers to help you make your decision.</p>
+                </div>
+                <div id="faq-accordion" class="space-y-4">
+                    <div class="faq-item bg-white rounded-lg shadow">
+                        <button class="faq-question w-full flex justify-between items-center text-left p-4 font-semibold">
+                            <span>What is an (LPA)?</span>
+                            <span class="faq-icon plus text-brand-yellow text-xl font-bold">+</span>
+                            <span class="faq-icon minus text-brand-yellow text-xl font-bold hidden">-</span>
+                        </button>
+                        <div class="faq-answer hidden p-4 pt-0 text-gray-600">
+                            A lasting power of attorney is a legal document that allows you to appoint one or more people to make decisions on your behalf during your lifetime.
+                        </div>
+                    </div>
+                     <div class="faq-item bg-white rounded-lg shadow">
+                        <button class="faq-question w-full flex justify-between items-center text-left p-4 font-semibold">
+                            <span>How is an LPA different from a Deputyship?</span>
+                            <span class="faq-icon plus text-brand-yellow text-xl font-bold">+</span>
+                            <span class="faq-icon minus text-brand-yellow text-xl font-bold hidden">-</span>
+                        </button>
+                        <div class="faq-answer hidden p-4 pt-0 text-gray-600">
+                            An LPA is set up by you while you have mental capacity. A Deputyship is appointed by the Court of Protection for someone who has already lost capacity.
+                        </div>
+                    </div>
+                     <div class="faq-item bg-white rounded-lg shadow">
+                        <button class="faq-question w-full flex justify-between items-center text-left p-4 font-semibold">
+                            <span>What are the types of LPA?</span>
+                             <span class="faq-icon plus text-brand-yellow text-xl font-bold">+</span>
+                            <span class="faq-icon minus text-brand-yellow text-xl font-bold hidden">-</span>
+                        </button>
+                        <div class="faq-answer hidden p-4 pt-0 text-gray-600">
+                            There are two types: one for health and welfare, and another for property and financial affairs. You can choose to make one or both.
+                        </div>
+                    </div>
+                    <div class="faq-item bg-white rounded-lg shadow">
+                        <button class="faq-question w-full flex justify-between items-center text-left p-4 font-semibold">
+                            <span>How long does it take to set up an LPA?</span>
+                             <span class="faq-icon plus text-brand-yellow text-xl font-bold">+</span>
+                            <span class="faq-icon minus text-brand-yellow text-xl font-bold hidden">-</span>
+                        </button>
+                        <div class="faq-answer hidden p-4 pt-0 text-gray-600">
+                            The process can take several months, as it needs to be registered with the Office of the Public Guardian (OPG) before it can be used.
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Final CTA Section -->
+            <section id="final-cta" class="bg-brand-navy px-6 py-12 text-center">
+                <p class="text-brand-yellow text-sm font-semibold">START NOW</p>
+                <h2 class="text-3xl font-bold leading-tight mb-4">Ready to stop thinking about LPAs and just get yours done</h2>
+                <p class="text-gray-300 mb-8">
+                    One short form. A clear recommendation. Either a simple DIY pack or a solicitor drafted LPA that lets you sleep at night without replaying family dramas in your head.
+                </p>
+                <div class="flex flex-col gap-4">
+                    <button class="bg-brand-yellow text-brand-navy font-semibold py-3 px-6 rounded-lg flex items-center justify-center space-x-2 w-full">
+                        <i class="fa-solid fa-play-circle"></i>
+                        <span>Start my LPA Journey</span>
+                    </button>
+                    <button class="border-2 border-white text-white font-semibold py-3 px-6 rounded-lg flex items-center justify-center space-x-2 w-full">
+                        <i class="fa-solid fa-bolt"></i>
+                        <span>Speak to an LPA Specialist</span>
+                    </button>
+                </div>
+            </section>
+        </main>
+        
+        <!-- Footer -->
+        <footer id="footer" class="bg-brand-navy px-6 py-10 text-center text-gray-400">
+            <div class="mb-6">
+                <p class="font-bold text-white text-lg">Open Hours:</p>
+                <p>Monday to Friday 9am to 5:30pm</p>
+            </div>
+            
+            <div class="mb-6">
+                 <h3 class="text-xl font-bold text-white mb-2">EndeavourLaw.com</h3>
+                 <p>12345 678901</p>
+                 <p>support@endeavourlaw.com</p>
+            </div>
+            
+            <div class="mb-8">
+                <h4 class="text-lg font-semibold text-white mb-3">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-white">Features</a></li>
+                    <li><a href="#" class="hover:text-white">Reviews</a></li>
+                    <li><a href="#" class="hover:text-white">FAQs</a></li>
+                    <li><a href="#" class="hover:text-white">Blogs</a></li>
+                    <li><a href="#" class="hover:text-white">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="mb-8">
+                <h4 class="text-lg font-semibold text-white mb-3">Subscribe</h4>
+                <form class="flex max-w-sm mx-auto">
+                    <input type="email" placeholder="Get product updates" class="w-full bg-gray-800 border border-gray-600 text-white px-4 py-2 rounded-l-md focus:outline-none focus:ring-2 focus:ring-brand-yellow">
+                    <button type="submit" class="bg-brand-yellow text-brand-navy px-4 py-2 rounded-r-md"><i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+            </div>
+            
+            <div class="flex justify-center space-x-4 mb-6">
+                <a href="#" class="text-gray-400 hover:text-white"><i class="fa-brands fa-linkedin-in text-xl"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white"><i class="fa-brands fa-facebook-f text-xl"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white"><i class="fa-brands fa-twitter text-xl"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white"><i class="fa-brands fa-instagram text-xl"></i></a>
+            </div>
+            
+            <div class="text-xs border-t border-gray-700 pt-6">
+                <p>&copy; 2024 Endeavour Law. All rights reserved</p>
+                <div class="mt-2">
+                    <a href="#" class="hover:text-white">About</a> | 
+                    <a href="#" class="hover:text-white">Privacy Policy</a> | 
+                    <a href="#" class="hover:text-white">Terms & Conditions</a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Floating Action Button -->
+        <div class="sticky bottom-0 left-0 right-0 p-4 bg-brand-navy/80 backdrop-blur-sm border-t border-brand-yellow">
+            <button class="w-full bg-brand-yellow text-brand-navy font-bold py-3 px-4 rounded-lg flex items-center justify-center space-x-2 text-lg">
+                <i class="fa-solid fa-phone"></i>
+                <span>Call Free Now</span>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const accordionItems = document.querySelectorAll('.faq-item');
+            accordionItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                const answer = item.querySelector('.faq-answer');
+                const plusIcon = item.querySelector('.plus');
+                const minusIcon = item.querySelector('.minus');
+
+                question.addEventListener('click', () => {
+                    const isVisible = !answer.classList.contains('hidden');
+                    
+                    // Close all other items
+                    accordionItems.forEach(otherItem => {
+                        if(otherItem !== item) {
+                            otherItem.querySelector('.faq-answer').classList.add('hidden');
+                            otherItem.querySelector('.plus').classList.remove('hidden');
+                            otherItem.querySelector('.minus').classList.add('hidden');
+                        }
+                    });
+
+                    // Toggle current item
+                    answer.classList.toggle('hidden');
+                    plusIcon.classList.toggle('hidden');
+                    minusIcon.classList.toggle('hidden');
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
